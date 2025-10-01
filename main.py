@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 import config
 
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.members = True
 intents.message_content = True
 
@@ -84,3 +84,4 @@ async def on_member_join(member: discord.Member):
 
 if __name__ == "__main__":
     bot.run(config.TOKEN)
+
